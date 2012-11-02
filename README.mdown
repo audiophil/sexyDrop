@@ -1,0 +1,56 @@
+Sexy Drop
+=============
+
+> Sexy drop is a lightweight jQuery plugin that gives you the ability create the illusion of a custom HTML select element.
+
+Installation
+------------------
+
+**Step one:** Add jQuery and the sexyDrop script file to your project
+
+```
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="path/sexyDrop.js"></script>
+````
+
+Simple Initialization
+------------------
+
+Insert the following command somewhere after your placement of the *sexyDrop.js* file
+
+```
+$(function(){
+  
+  $('select').sexyDrop();
+  
+});
+```
+
+Advanced Initialization
+------------------
+
+sexyDrop comes prepared with a handful of options provide maximum ease and customizability.
+
+```
+$(function(){
+  
+  $('select').sexyDrop({
+    autoWidth : true,
+    verticallyAlign : true,
+    wrapperClass : 'pxuSexyDropWrapper',
+    wrapperElement : 'div',
+    wrapperPosition : 'relative',
+    textClass : 'pxuSexyDrop',
+    textElement : 'div',
+    selectPosition : 'absolute'
+  });
+  
+});
+```
+
+Options
+------------------
+
+### autoWidth (default: true)
+
+> Enabling autoWidth overrides user defined CSS width properties and matches the select elements native width
