@@ -6,8 +6,6 @@ Sexy Drop
 Installation
 ------------------
 
-**Step one:** Add jQuery and the sexyDrop script file to your project
-
 ```
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="path/sexyDrop.js"></script>
@@ -20,9 +18,7 @@ Insert the following command somewhere after your placement of the *sexyDrop.js*
 
 ```
 $(function(){
-  
   $('select').sexyDrop();
-  
 });
 ```
 
@@ -35,14 +31,7 @@ sexyDrop comes prepared with a handful of options provide maximum ease and custo
 $(function(){
   
   $('select').sexyDrop({
-    autoWidth : true,
-    verticallyAlign : true,
-    wrapperClass : 'pxuSexyDropWrapper',
-    wrapperElement : 'div',
-    wrapperPosition : 'relative',
-    textClass : 'pxuSexyDrop',
-    textElement : 'div',
-    selectPosition : 'absolute'
+    // Define custom options here
   });
   
 });
@@ -51,6 +40,41 @@ $(function(){
 Options
 ------------------
 
-### autoWidth (default: true)
+#### autoWidth (default: true)
+> This option overrides user defined CSS width properties and matches the HTML select elements native width
 
-> Enabling autoWidth overrides user defined CSS width properties and matches the select elements native width
+#### verticallyAlign (default: true)
+> This option will vertically centre the original HTML select element within your newly styled select box
+
+#### wrapperClass (default: 'pxuSexyDropWrapper')
+> This option lets you specify the class given to an inserted wrapper element
+
+#### wrapperElement (default: 'div')
+> This option lets you specify what type of element the inserted wrapper should be
+
+#### wrapperPosition (default: 'relative')
+> This option determines the CSS position value for the inserted wrapper element.
+
+#### textClass (default: 'pxuSexyDrop')
+> This option lets you specify the class given to an inserted text element
+
+#### textElement (default: 'div')
+> This option lets you specify what type of element the inserted text element should be
+
+#### selectPosition (default: 'absolute')
+> This option lets you determine the CSS position value for the original HTML select element
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
