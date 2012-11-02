@@ -63,7 +63,10 @@ $(function(){
             
             if (settings.autoWidth) {
                 var textBoxPadding = parseInt(textBox.css('padding-left')) + parseInt(textBox.css('padding-right'));
-                textBox.css('width', (originalWidth - textBoxPadding) );
+                textBox
+                    .css('width', (originalWidth - textBoxPadding) );
+                wrapper
+                    .css('width', originalWidth)
             }
             
             if (settings.verticallyAlign) {
